@@ -30,6 +30,34 @@ body {
   background: radial-gradient(circle at 20% 0%, #ffe5f0 0%, var(--bg-a) 30%, var(--bg-b) 100%);
 }
 
+.site-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(79, 19, 53, 0.9);
+  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  backdrop-filter: blur(8px);
+  pointer-events: auto;
+}
+
+.site-footer a {
+  color: #7a1346;
+  font-weight: 700;
+}
+
 .page,
 .yes-page {
   position: relative;
@@ -359,5 +387,9 @@ h1 {
   .lang-switch {
     top: 18px;
     right: 18px;
+  }
+
+  .site-footer p {
+    font-size: 0.92rem;
   }
 }

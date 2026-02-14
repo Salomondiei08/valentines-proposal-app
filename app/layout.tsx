@@ -19,6 +19,18 @@ export default function RootLayout({
     <html lang="fr">
       <body>
         {children}
+        <footer className="site-footer">
+          <p>
+            made with ❤️ by{" "}
+            <a
+              href="https://github.com/Salomondiei08/valentines-proposal-app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Salomon
+            </a>
+          </p>
+        </footer>
         <Analytics />
       </body>
     </html>
