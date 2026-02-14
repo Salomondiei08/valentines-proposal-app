@@ -75,10 +75,9 @@ export default function HomePage() {
       return;
     }
 
-    const autoLang: Lang = window.navigator.language.toLowerCase().startsWith("fr") ? "fr" : "en";
-    setLang(autoLang);
-    window.localStorage.setItem("valentine-lang", autoLang);
-    params.set("lang", autoLang);
+    setLang("fr");
+    window.localStorage.setItem("valentine-lang", "fr");
+    params.set("lang", "fr");
     window.history.replaceState({}, "", `${window.location.pathname}?${params.toString()}`);
   }, []);
 
